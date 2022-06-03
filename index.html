@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-widt, initial-scale=1.0">
+        <title>controle PlayStstion</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="img/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Controles</a></li>
+                        <li><a href="">VR</a></li>
+                        <li><a href="">Controle Remoto</a></li>
+                        <li><a href="">outros</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>PS4 V2<br>Dualshock 4</h2>
+                    <h3>controle sem fio para PlayStstion</h3>
+                    <p>(generico/compativel)</p>
+                    <h4>R$299,99</h4>
+                    <button type="button">compre agora <img src="img/arrow.png"></button>
+                </div>
+                <div class="col-2">
+                    <img src="img/controller.png" class="controller">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="img/add.png">
+                        <p><small>adicionar ao carrinho</small></p>
+
+                    </div>
+                </div>
+            </div>
+                <div class="sociallinks">
+                    <img src="img/fb.png" class="sociallinks">
+                    <img src="img/tw.png" class="sociallinks">
+                    <img src="img/ig.png" class="sociallinks">
+                </div>
+        </div>
+
+            <script>
+                var menuList = document.getElementById("menuList");
+
+                menuList.style.maxHeight = "0px";
+
+                function togglemenu(){
+                    if (menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                    else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+
+    </body>
+</html>
